@@ -7,8 +7,8 @@ const App = () => {
   const today = new Date(Date.now()).toISOString().slice(0, 10);
   const [apod, setApod] = useState({});
   const [date, setDate] = useState(today);
-  const NASA_URL = import.meta.env.VITE_APP_NASA_ENDPOINT;
-  const NASA_API_KEY = import.meta.env.VITE_APP_NASA_API_KEY;
+  const NASA_URL = "https://api.nasa.gov/";
+  const NASA_API_KEY = "5JS20gQ4aHePLkpWjSmtjLn62zWN6AYu0kR2jFvI";
 
   useEffect(() => {
     const getApod = async () => {
