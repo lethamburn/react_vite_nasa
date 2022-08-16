@@ -1,0 +1,31 @@
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+figure img {
+  width: 20vw;
+  padding: 0.5rem;
+  border: 1px whitesmoke dashed;
+}
+
+figure figcaption {
+  font-style: italic;
+}
+
+figure p {
+  text-align: justify;
+}
+
+@media (max-width: 700px) {
+  figure img {
+    width: 80vw;
+  }
+
+  figure figcaption{
+    align-self: flex-end;
+  }
+}
