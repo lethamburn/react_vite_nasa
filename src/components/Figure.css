@@ -7,7 +7,9 @@ figure {
 }
 
 figure img {
-  width: 20vw;
+  width: 24rem;
+  height: 24rem;
+  object-fit: cover;
   padding: 0.3rem;
   border: 2px black dotted;
 }
