@@ -8,24 +8,11 @@ figure {
 
 figure img {
   width: 20vw;
-  padding: 0.5rem;
-  border: 1px whitesmoke dashed;
+  padding: 0.3rem;
+  border: 2px black dotted;
 }
-
-figure figcaption {
-  font-style: italic;
-}
-
-figure p {
-  text-align: justify;
-}
-
 @media (max-width: 700px) {
   figure img {
     width: 80vw;
-  }
-
-  figure figcaption{
-    align-self: flex-end;
   }
 }

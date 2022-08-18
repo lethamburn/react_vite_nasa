@@ -26,14 +26,17 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>NASA API</h1>
-      <h2>Astronomy Picture of the Day</h2>
+      <h2>NASA API 🪐</h2>
+      <h1>Astronomy Picture of the Day</h1>
       <input type="date" id="photo-date" onChange={handleInput} />
       {date > today ? (
-        <h3>Please choose a previous date</h3>
+        <h2>Please choose a previous date</h2>
       ) : (
         <Figure data={apod} />
       )}
+      <div className="standard-dialog center">
+        <h1 className="dialog-text">@lethamburn - 2022</h1>
+      </div>
     </div>
   );
 };
