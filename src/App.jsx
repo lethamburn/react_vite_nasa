@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
+import logo from "./assets/logo.png";
 import Figure from "./components/Figure";
 
 const App = () => {
@@ -26,7 +27,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <h2>NASA API 🪐</h2>
+      <h2 className="title">
+        NASA API <img src={logo} className="logo" alt="NASA LOGO" />
+      </h2>
       <h1>Astronomy Picture of the Day</h1>
       <input type="date" id="photo-date" onChange={handleInput} />
       {date > today ? (
